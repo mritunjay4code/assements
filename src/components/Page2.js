@@ -10,30 +10,27 @@ function Page2() {
 
   return (
     <div className=" bg-[#1DBF73] flex items-center justify-center ">
-      <div className="  w-[1150px] h-[705px] mt-[67px]  shadow-lg flex  mb-5  bg-green-100">
-        <div className="h-[705px]  w-[680px]  shadow-xl text-white flex flex-col items-center">
+      <div className="  w-[98vw] h-[100vh]   shadow-lg flex  mb-5 mt-8 bg-green-100">
+        <div className="h-[100vh]  w-[40vw]  shadow-xl text-white flex flex-col items-center">
           <div className="text-center items-center">
-            <div className="h-[134.66px] w-[300.33px] rounded-lg  border-[0.8px] p-[33.83px] gap-[33.83px]"></div>
+            <div className=" "></div>
             <div className="mt-40 flex flex-col justify-center items-center py-5">
-              <img
-                className="h-[73.16px] w-[189px] mt-28 "
-                src="/image/log.png"
-              />
+              <img className="  mt-28 " src="/image/log.png" />
             </div>
           </div>
-          <div className="text-center mb-[76px] flex flex-col justify-center items-center overflow-y-auto p-8">
-            <p className=" text-[#3C3C3C] font-Poppinspins w-[365px] h-[43px] text-[24px] font-semibold ">
+          <div className="text-center mb-[76px] flex flex-col justify-center items-center ">
+            <p className=" text-[#3C3C3C] font-Poppinspins w-[365px] h-[6vh] text-[24px] font-semibold ">
               Contact Us For Support
             </p>
-            <div className="flex items-center space-x-4 text-[18px] ">
+            <div className="flex items-center space-x-4 text-[3vh] ">
               <CgMail className="text-[#3C3C3C] font-semibold font-Poppins h-8 w-14" />
-              <p className="ml-24 text-[#3C3C3C] font-semibold font-Poppins">
+              <p className=" text-[#3C3C3C] font-semibold font-Poppins">
                 support@hopingminds.com
               </p>
             </div>
-            <div className="flex items-center space-x-4 text-[18px] ">
+            <div className="flex items-center space-x-4 text-[3vh] ">
               <FaPhoneAlt className="text-[#3C3C3C] font-semibold font-Poppins h-7 w-5" />
-              <p className="ml-24 text-[#3C3C3C] font-semibold font-Poppins">
+              <p className=" text-[#3C3C3C] font-semibold font-Poppins">
                 +91 7447732467, 356263553
               </p>
             </div>
@@ -42,7 +39,7 @@ function Page2() {
 
         <div className="rounded-l-xl w-full pl-10 py-6    bg-white  boe ">
           <div className="">
-            <p className=" w-[528px] mt-10 text-[36px] font-bold font-Poppins">
+            <p className=" w-[60vw] mt-10 text-[36px] font-bold font-Poppins">
               Here Are Few Instructions
             </p>
             <p className="text-4xl font-bold  h-10  font-Poppins">
@@ -50,10 +47,11 @@ function Page2() {
               Before Doing The Test -
             </p>
           </div>
-          <div class="max-w-2xl mx-auto p-8 overflow-scroll bg-white mt-10 h-96 text-justify ">
-            <h1 class="text-2xl font-bold mb-6">
+          <div class="max-w-2xl  overflow-y-auto bg-white mt-10 h-80 text-justify w-[70%]">
+            <h1 class="text-2xl font-semibold mb-6">
               Here are the online test instructions for an AI-proctored PAP (Pay
-              After Placement) Test:
+              After Placement) Test: with additional alerts for specific
+              behaviour
             </h1>
 
             <h2 class="text-xl font-bold text-green-600 mb-4">
@@ -97,10 +95,6 @@ function Page2() {
               </li>
               <li>The AI will flag any suspicious behaviour for review</li>
             </ol>
-            <h1 class="text-2xl font-bold mb-6">
-              Here are the online test instructions for an AI-proctored PAP (Pay
-              After Placement) Test:
-            </h1>
 
             <h2 class="text-xl font-bold text-green-600 mb-4">Alerts:</h2>
             <ol class="list-decimal list-inside text-lg space-y-2">
@@ -126,10 +120,10 @@ function Page2() {
               </li>
             </ol>
 
-            <h2 class="text-xl font-bold text-green-600 mt-8 mb-4">
+            <h2 className="text-xl font-bold text-green-600 mt-8 mb-4">
               Submitting the Test:
             </h2>
-            <ol class="list-decimal list-inside text-lg space-y-2">
+            <ol className="list-decimal list-inside text-lg">
               <li>
                 Once complete, click "Submit Test" and follow any additional
                 instructions.
@@ -157,13 +151,13 @@ function Page2() {
               disabled={!isChecked}
               class="mt-6 bg-green-500 text-white py-2 px-6 rounded hover:bg-green-600"
             >
-              {isChecked ? "Ready to Begin" : ""}
+              {isChecked ? "Ready to Begin" : " "}
             </button>
           </div>
 
           <button
             type="submit"
-            className="w-[561px] bg-[#1DBF73] text-white py-2 rounded-lg font-semibold h-16 mt-8 shadow-[2.0px_3.0px_2.0px_rgba(0,0,0,0.1)]"
+            className="w-[40vw] bg-[#1DBF73] mt-5 text-white py-2 rounded-lg font-semibold h-16  shadow-[2.0px_3.0px_2.0px_rgba(0,0,0,0.1)]"
           >
             Ready To Begin →
           </button>
